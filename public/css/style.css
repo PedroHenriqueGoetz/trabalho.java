@@ -9,23 +9,42 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    padding: 20px;
+
+    /* CENTRALIZA SEM QUEBRAR */
+    display: flex;
+    justify-content: center;
+
+    min-height: 100vh;
 }
 
-/* TITULOS */
+/* CONTAINER PADRÃO (TODAS AS TELAS) */
+.container {
+    width: 100%;
+    max-width: 600px;
+
+    background: white;
+    padding: 30px;
+    margin: 40px 0;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* TITULO */
 h1 {
+    text-align: center;
     margin-bottom: 20px;
     color: #333;
 }
 
-/* LINKS */
+/* LINKS (BOTÕES) */
 a {
     display: inline-block;
-    margin: 10px 10px 10px 0;
+    margin: 10px 5px;
     text-decoration: none;
     color: white;
     background-color: #007bff;
-    padding: 8px 12px;
+    padding: 8px 15px;
     border-radius: 5px;
 }
 
@@ -33,25 +52,31 @@ a:hover {
     background-color: #0056b3;
 }
 
+/* BLOCO DE BOTÕES */
+.links {
+    text-align: center;
+}
+
 /* FORM */
 form {
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
 }
 
 /* INPUT */
 input {
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 /* BOTÃO */
 button {
+    width: 100%;
     padding: 10px;
+
     background-color: #28a745;
     color: white;
     border: none;
@@ -66,8 +91,10 @@ button:hover {
 /* LISTA */
 ul {
     margin-top: 20px;
+    list-style: none;
 }
 
 li {
-    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }

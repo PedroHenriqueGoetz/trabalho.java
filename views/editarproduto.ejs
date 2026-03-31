@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
     <title>Editar Produto</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-<h1>Editar Produto</h1>
+<div class="container">
 
-<form action="/produtos/editar/<%= produto.id %>" method="POST">
-    <input name="nome" value="<%= produto.nome %>" required>
-    <input name="preco" value="<%= produto.preco %>" required>
-    <button>Salvar</button>
-</form>
+    <h1>Editar Produto</h1>
 
-<a href="/produtos">Voltar</a>
+    <form action="/produtos/editar/<%= produto.id %>" method="POST">
+        <input name="nome" value="<%= produto.nome %>" required>
+        <input name="preco" value="<%= produto.preco %>" required>
+        <button type="submit">Salvar</button>
+    </form>
+
+    <div class="links">
+        <a href="/produtos">Voltar</a>
+        <a href="/">Home</a>
+    </div>
+
+</div>
 
 </body>
 </html>
