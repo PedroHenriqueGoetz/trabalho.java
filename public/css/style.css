@@ -22,7 +22,7 @@ body {
     width: 100%;
     max-width: 600px;
 
-    background: white;
+    background: rgb(161, 190, 186);
     padding: 30px;
     margin: 40px 0;
 
@@ -43,13 +43,13 @@ a {
     margin: 10px 5px;
     text-decoration: none;
     color: white;
-    background-color: #007bff;
+    background-color: #325768;
     padding: 8px 15px;
     border-radius: 5px;
 }
 
 a:hover {
-    background-color: #0056b3;
+    background-color: #4498a9af;
 }
 
 /* BLOCO DE BOTÕES */
